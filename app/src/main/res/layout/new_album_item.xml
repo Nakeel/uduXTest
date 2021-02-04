@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_150sdp"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_120sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:id="@+id/album_art_card"
+        android:layout_height="@dimen/_120sdp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:id="@+id/album_img_view"
+            android:src="@drawable/t_as_t"/>
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:layout_below="@id/album_art_card"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/album_info_layout"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/album_title_tv"
+                android:ellipsize="end"
+                android:textAllCaps="true"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/white"
+                android:text="Twice as Tall"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/album_artist_tv"
+                android:textSize="@dimen/_9ssp"
+                android:textColor="@color/white"
+                android:text="Burna Boy"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:paddingTop="@dimen/_3sdp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/round_outline"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primaryYellow"
+                android:text="NEW"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

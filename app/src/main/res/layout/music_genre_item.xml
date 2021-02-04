@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_160sdp"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_140sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:id="@+id/music_genre_art_card"
+        android:layout_height="@dimen/_100sdp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:id="@+id/mood_art_img"
+            android:src="@drawable/t_as_t"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_140sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp"
+        android:id="@+id/overlay_view"
+        app:cardBackgroundColor="@color/genreTransparent"
+        android:layout_height="@dimen/_100sdp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Afro jazz"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            android:gravity="center"
+            android:id="@+id/music_genre_name_title_tv"/>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
