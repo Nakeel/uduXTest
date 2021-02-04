@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/mini_player_layout"
+    android:visibility="gone"
+    android:layout_gravity="bottom"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <ProgressBar
+        android:id="@+id/mini_player_progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:indeterminate="false"
+        android:max="100"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:progress="0"
+        />
+    <RelativeLayout
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingTop="@dimen/_7sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/t_as_t"
+        android:id="@+id/song_art_img"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/song_art_img"
+        android:layout_toRightOf="@id/song_art_img"
+        android:id="@+id/song_info_layout"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:id="@+id/song_title_tv"
+            android:textSize="@dimen/_14sdp"
+            android:text="Way too big"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_9sdp"
+            android:id="@+id/new_song_artist_tv"
+            android:textColor="#737373"
+            android:text="Burna Boy"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_play"
+            android:visibility="gone"
+            android:id="@+id/play_pause_img_btn"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            />
+        <ProgressBar
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:visibility="visible"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:id="@+id/song_loading_progress_bar"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_skip"
+            android:id="@+id/next_img_btn"
+            />
+
+    </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

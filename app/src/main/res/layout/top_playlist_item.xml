@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_140sdp"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_120sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:id="@+id/playlist_art_card"
+        android:layout_height="@dimen/_100sdp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:id="@+id/playlist_art_img"
+            android:src="@drawable/t_as_t"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_120sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:padding="@dimen/_20sdp"
+        app:cardBackgroundColor="@color/blueTransparent"
+        android:layout_height="@dimen/_100sdp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="The throwback"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp"
+            android:gravity="center"
+            android:id="@+id/playlist_name_title_tv"/>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

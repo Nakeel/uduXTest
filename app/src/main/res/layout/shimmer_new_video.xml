@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_170sdp"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_150sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:id="@+id/album_art_card"
+        android:layout_height="@dimen/_120sdp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:id="@+id/album_img_view"
+            android:src="@drawable/shimer_skeleton"/>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

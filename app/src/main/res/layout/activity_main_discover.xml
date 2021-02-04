@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#1B1B1B"
+    android:layout_height="match_parent"
+    tools:context=".DiscoverActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_200sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/dark_header"/>
+                    <ImageView
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_width="@dimen/_30sdp"
+                        android:src="@drawable/logo"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_20sdp" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        android:layout_height="@dimen/_160sdp">
+                        <ImageView
+                            android:layout_width="@dimen/_130sdp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/wizzy"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/event_title_date_layout"
+                            android:orientation="vertical"
+
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_9ssp"
+                                android:text="WIZKID ON BREAKFAST CLUB"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_21ssp"
+                                android:textStyle="bold"
+                                android:text="FEB. 16, 2021"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_below="@id/event_title_date_layout"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:background="@drawable/round_corner_watch_button_bg"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:src="@android:drawable/ic_media_play"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_10ssp"
+                                android:text="WATCH THE FULL VIDEO"/>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:background="@drawable/round_corner_watch_yellow_button_bg"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Magic Playlist"
+                            android:textColor="@color/white"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:src="@drawable/ic_magic_wand"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:background="@drawable/round_corner_watch_primary_button_bg"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mood"
+                            android:textColor="@color/white"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/_18sdp"
+                            android:layout_height="@dimen/_18sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:src="@drawable/ic_headphones"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmer_album_list_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/shimmer_album" />
+
+                        <include layout="@layout/shimmer_album" />
+
+                        <include layout="@layout/shimmer_album" />
+
+                    </LinearLayout>
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:id="@+id/new_album_recycler_view"/>
+
+                </LinearLayout>
+                    <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/playlist_header_layout">
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:id="@+id/playlist_icon"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:src="@drawable/ic_cassette"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/playlist_icon"
+                        android:layout_toEndOf="@id/playlist_icon"
+                        android:textColor="@color/white"
+                        android:text="Playlists | Mixes: Top Picks"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="View all"
+                            android:textColor="#737373"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            />
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:src="@drawable/ic_right_arrow"/>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/shimmer_playlist_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <include layout="@layout/shimmer_playlist" />
+
+                            <include layout="@layout/shimmer_playlist" />
+
+                            <include layout="@layout/shimmer_playlist" />
+
+                        </LinearLayout>
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:id="@+id/top_playlist_recycler_view"/>
+
+                </LinearLayout>
+
+
+               <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/new_video_header_layout">
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:id="@+id/new_video_icon"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:src="@drawable/ic_multimedia"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/new_video_icon"
+                        android:layout_toEndOf="@id/new_video_icon"
+                        android:textColor="@color/white"
+                        android:text="Exclusive New Videos"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="View all"
+                            android:textColor="#737373"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            />
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:src="@drawable/ic_right_arrow"/>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/shimmer_new_video_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <include layout="@layout/shimmer_new_video" />
+
+                            <include layout="@layout/shimmer_new_video" />
+
+                            <include layout="@layout/shimmer_new_video" />
+
+                        </LinearLayout>
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/new_videos_recycler_view"/>
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/genre_header_layout">
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:id="@+id/genre_icon"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:src="@drawable/ic_compac_disc_recording"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/genre_icon"
+                        android:layout_toEndOf="@id/genre_icon"
+                        android:textColor="@color/white"
+                        android:text="Genres | Mood | Themes"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="View all"
+                            android:textColor="#737373"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            />
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:src="@drawable/ic_right_arrow"/>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/shimmer_mood_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <include layout="@layout/shimmer_playlist" />
+
+                            <include layout="@layout/shimmer_playlist" />
+
+                            <include layout="@layout/shimmer_playlist" />
+
+                        </LinearLayout>
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:id="@+id/music_genre_recycler_view"/>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/new_song_layout">
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:id="@+id/song_icon"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:src="@drawable/ic_music_note"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/song_icon"
+                        android:layout_toEndOf="@id/song_icon"
+                        android:textColor="@color/white"
+                        android:text="New Music Week"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="View all"
+                            android:textColor="#737373"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            />
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:src="@drawable/ic_right_arrow"/>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/shimmer_new_song_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <include layout="@layout/shimmer_new_song" />
+
+                            <include layout="@layout/shimmer_new_song" />
+
+                            <include layout="@layout/shimmer_new_song" />
+
+                        </LinearLayout>
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/new_songs_recycler_view"
+                                        android:layout_marginBottom="@dimen/_30sdp"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/udux_chart_header_layout">
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:id="@+id/udux_chart_icon"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:src="@drawable/ic_bar_chart"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/udux_chart_icon"
+                        android:layout_toEndOf="@id/udux_chart_icon"
+                        android:textColor="@color/white"
+                        android:text="uduX Charts"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="View all"
+                            android:textColor="#737373"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            />
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:src="@drawable/ic_right_arrow"/>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <include layout="@layout/udux_chart_item"/>
+
+                        <include layout="@layout/udux_chart_item"/>
+
+                        <include layout="@layout/udux_chart_item"/>
+
+                    </LinearLayout>
+                </ScrollView>
+                <!--                <androidx.recyclerview.widget.RecyclerView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+
+                <!--                    android:id="@+id/udux_chart_recycler_view"/>-->
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/events_header_layout">
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:id="@+id/events_icon"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:src="@drawable/ic_event_black"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/events_icon"
+                        android:layout_toEndOf="@id/events_icon"
+                        android:textColor="@color/white"
+                        android:text="Events"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="View all"
+                            android:textColor="#737373"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            />
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:src="@drawable/ic_right_arrow"/>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <include layout="@layout/event_item"/>
+
+                        <include layout="@layout/event_item"/>
+
+                        <include layout="@layout/event_item"/>
+
+                    </LinearLayout>
+                </ScrollView>
+                <!--                <androidx.recyclerview.widget.RecyclerView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+
+                <!--                    android:id="@+id/udux_chart_recycler_view"/>-->
+
+
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryRed">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_10ssp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:textColor="@color/white"
+                android:text="PROMO OFFER! Get uduX Premium for 25% off today. Hurry!!!"
+                />
+            <ImageView
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/close_circle"
+                />
+
+        </RelativeLayout>
+
+        <include layout="@layout/mini_player"
+            />
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
